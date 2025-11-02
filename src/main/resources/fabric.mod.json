@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "luckyblock",
+	"version": "${version}",
+	"name": "Lucky Block",
+	"description": "Adds a simple Lucky Block to Minecraft. Break it to get a reward or a punishment...",
+	"authors": [
+		"Lennart Lutz"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/lucky-block/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "com.luckyblock.LuckyBlockInitializer"
+		],
+		"client": [
+			"com.luckyblock.LuckyBlockClient"
+		],
+		"fabric-datagen": [
+			"com.luckyblock.LuckyBlockDataGenerator"
+		]
+	},
+	"mixins": [
+		"lucky-block.mixins.json",
+		{
+			"config": "lucky-block.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.17.3",
+		"minecraft": "~1.21.10",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
