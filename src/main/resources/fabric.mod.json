@@ -3,13 +3,13 @@
 	"id": "luckyblock",
 	"version": "${version}",
 	"name": "Lucky Block",
-	"description": "Adds a simple Lucky Block to Minecraft. Break it to get a reward or a punishment...",
+	"description": "Adds two simple (Infinite) Lucky Blocks to Minecraft. Break it to get a reward or a punishment...",
 	"authors": [
 		"Lennart Lutz"
 	],
 	"contact": {
 		"homepage": "",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/Lennart-Lutz/lucky-block-1.21.10"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/lucky-block/icon.png",
